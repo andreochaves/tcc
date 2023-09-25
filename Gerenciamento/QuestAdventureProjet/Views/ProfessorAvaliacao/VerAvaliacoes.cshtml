@@ -1,0 +1,40 @@
+﻿@model List<QuestAdventure.Models.Avaliacao>
+@{
+    Layout = "Professor/_LayoutProfessorTelaAvaliacao";
+}
+
+<h1>Lista de Avaliações</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Avaliação</th>
+            <th>Tentativas</th>
+            <th>Questões</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var row in Model)
+            {
+                <tr>
+                    <td>@row.Nome</td>
+                    <td>@row.Tentativa</td>
+                    <td>
+                        @Html.ActionLink("Visualizar Questões", "VerQuestoes", new {id=@row.Id })
+                    </td>
+                    <td>
+                        @Html.ActionLink("Delete", "DeletarAvaliacao", new {id=@row.Id },new { onclick = "return confirm('Deseja realmente deletar esta avaliação?');" })
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<h4>
+    <font color="red">
+        @Html.ValidationSummary()
+    </font>
+</h4>

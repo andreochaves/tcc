@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "Admin/_LayoutAdmin";
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+        Cadastro de Matéria
+    </h1>
+</div>
+
+<form asp-action="Disciplina">
+    <div class="form-group">
+        @Html.ActionLink("Adicionar Matéria", "CadastroMateriaEdicao")
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Lista de Materias </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in QuestAdventure.Controllers.UserManager.materiasEdicao)
+            {
+                <tr>
+                    <td>@Html.ActionLink(@row, "SelecionarMateriaEdicao", new { materia = @row })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Materias Selecionadas</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (QuestAdventure.Controllers.UserManager.selecaoMateriaEdicao != null)
+            {
+                @foreach (var row in QuestAdventure.Controllers.UserManager.selecaoMateriaEdicao)
+                {
+                    <tr>
+                        <td>@row</td>
+                        <td>
+                            @Html.ActionLink("Delete", "DeletarSelecaoEdicao", new { materia = row })
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <h4>
+        <font color="red">
+            @Html.ValidationSummary()
+        </font>
+    </h4>
+    @if (QuestAdventure.Controllers.UserManager.selecaoMateriaEdicao.Count > 0)
+    {
+        <button type="submit" asp-action="EditarProfessor" class="btn btn-primary">Atualizar Cadastro</button>
+    }
+</form>

@@ -1,0 +1,40 @@
+﻿@model QuestAdventure.Models.Alternativas
+@{
+    Layout = "Professor/_LayoutProfessorTelaQuestao";
+}
+
+<h1>Cadastro de Alternativa</h1>
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Alternativas </th>
+		</tr>
+	</thead>
+	<tbody>
+		@if (QuestAdventure.Controllers.UserManager.alternativasEdit != null)
+		{
+			@foreach (var row in QuestAdventure.Controllers.UserManager.alternativasEdit)
+			{
+				<tr>
+					<td>@row.Alternativa</td>
+					<td>@row.Correto</td>
+					<td>
+						@Html.ActionLink("Edit", "EditAlternativaEdit", new { alternativa = row.Alternativa })
+					</td>
+				</tr>
+			}
+		}
+	</tbody>
+</table>
+<form asp-action="EditarAlternativa">
+	<button type="submit" asp-action="ListaQuestao" class="btn btn-primary">Atualizar Questão</button>
+</form>
+
+
+	<h4>
+        <font color="red">
+        @Html.ValidationSummary()
+        </font>
+    </h4>

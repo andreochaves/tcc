@@ -1,0 +1,44 @@
+﻿@model List<QuestAdventure.Models.PontuacaoNomes>
+@{
+    Layout = "Professor/_LayoutTelaProfessor";
+}
+
+<h1>Notas dos Alunos</h1>
+
+<table class="table" border="1">
+    <thead align="center">
+        <tr>
+            <th>Avaliação</th>
+            <th>Aluno</th>
+            <th>Pontuação Final</th>
+           
+                @for (int j = 0; j < Model[0].PontoFase.Split(',').Length; j++){
+                    <th>Questão  @{
+                            int k = j + 1;
+                        }@k</th>
+                }
+        </tr>
+    </thead>
+    <tbody align="center" >
+       
+            @foreach (var row in Model)
+            {
+                string[] rws = @row.PontoFase.Split(',');
+                <tr>
+                    <td>@row.Avaliacao</td>
+                    <td>@row.Aluno</td>
+                    <td>@row.PontuacaoMaxima</td>
+                    @for(int i=0;i<@rws.Length;i++)
+                    {
+                        <td>@rws[i]</td>
+                    }
+                </tr>
+            }
+    </tbody>
+</table>
+
+<h4>
+    <font color="red">
+        @Html.ValidationSummary()
+    </font>
+</h4>

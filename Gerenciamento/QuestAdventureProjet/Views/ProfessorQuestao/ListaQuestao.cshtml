@@ -1,0 +1,39 @@
+﻿@model List<QuestAdventure.Models.Questao>
+@{
+    Layout = "Professor/_LayoutProfessorTelaQuestao";
+}
+
+<h1>Lista de Questões</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Questão</th>
+            <th>Alternativas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var row in Model)
+            {
+                <tr>
+                    <td>@row.Pergunta</td>
+                    <td>
+                        @Html.ActionLink("Visualizar Alternativas", "ListaAlternativa", new {  id=row.Id })
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "EditQuestao", new {  id=row.Id }) |
+                        @Html.ActionLink("Delete", "DeletarQuestao", new {  id=@row.Id})
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<h4>
+    <font color="red">
+        @Html.ValidationSummary()
+    </font>
+</h4>

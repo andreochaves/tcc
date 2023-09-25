@@ -1,0 +1,27 @@
+﻿@model List<QuestAdventure.Models.Alternativas>
+@{
+	Layout = "Professor/_LayoutProfessorTelaQuestao";
+}
+
+
+
+<h1>Alternativas</h1>
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Alternativa </th>
+			<th>Correta </th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var row in Model)
+		{
+			<tr>
+				<td>@row.Alternativa</td>
+				<td>@row.Correto</td>
+			</tr>
+		}
+	</tbody>
+</table>

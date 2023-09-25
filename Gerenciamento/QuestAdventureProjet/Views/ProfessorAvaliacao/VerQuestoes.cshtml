@@ -1,0 +1,50 @@
+﻿@model List<QuestAdventure.Models.Fase>
+@{
+    Layout = "Professor/_LayoutProfessorTelaAvaliacao";
+}
+
+<h1>Questões</h1>
+
+
+<table class="table">
+
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var fase in Model)
+            {
+                <tr style="font-weight:bold">
+                    <td>Fase: @fase.NumeroFase</td>
+                </tr>
+
+                string[] rows = @fase.Questao.Split(","[0]);
+                if (rows.Length>1)
+                {
+                    foreach (var row2 in rows)
+                    {
+                        <tr>
+                            @foreach (var row3 in QuestAdventure.Controllers.UserManager.verQuestoes.Where(item => item.Id.ToString() == row2))
+                            {
+                                <td>@row3.Pergunta</td>
+                            }
+                        </tr>
+
+                    }
+                }
+
+                else
+                {
+                    @foreach (var row in QuestAdventure.Controllers.UserManager.verQuestoes.Where(item => item.Id.ToString() == fase.Questao))
+                    {
+                        <tr>
+                            <td>@row.Pergunta</td>
+                        </tr>
+                    }
+                }
+
+            }
+        }
+
+    </tbody>
+</table>
+

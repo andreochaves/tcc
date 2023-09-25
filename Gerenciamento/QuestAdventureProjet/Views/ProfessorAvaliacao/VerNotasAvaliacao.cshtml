@@ -1,0 +1,28 @@
+﻿@model List<QuestAdventure.Models.Avaliacao>
+@{
+    Layout = "Professor/_LayoutTelaProfessor";
+
+}
+
+<form asp-controller="ProfessorAvaliacao">
+
+    <input type="submit" value=" Voltar" asp-controller="Professor" asp-action="TelaMateria" class="btn btn-primary" />
+
+
+    <h2>Sua Matéria: @QuestAdventure.Controllers.UserManager._materia</h2>
+
+    @if (Model != null)
+    {
+        @foreach (var row in Model)
+        {
+            <div class="form-group">
+                <a class="btn  btn-info btn-lg btn-block" href=@Url.Action("VerNotas","ProfessorAvaliacao",new{id=row.Id,avaliacao=row.Nome})>@row.Nome</a>
+            </div>
+        }
+    }
+    <h4>
+        <font color="red">
+            @Html.ValidationSummary()
+        </font>
+    </h4>
+</form>

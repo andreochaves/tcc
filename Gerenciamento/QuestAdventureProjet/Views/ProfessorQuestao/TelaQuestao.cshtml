@@ -1,0 +1,21 @@
+﻿@model QuestAdventure.Models.Materias
+
+@{
+	Layout = "Professor/_LayoutProfessorTelaQuestao";
+
+}
+<form asp-controller="ProfessorQuestao">
+
+	<input type="submit" value=" Voltar" asp-controller="Professor" asp-action="TelaMateria" class="btn btn-primary" />
+
+
+	<h2>Sua Matéria: @Model.Materia</h2>
+
+	<div class="form-group">
+		<a type="submit" asp-action="CadastroQuestao" class="btn btn-primary btn-lg btn-block">Cadastrar Questão</a>
+	</div>
+	<div class="form-group">
+		<a type="submit" asp-action="ListaQuestao" class="btn btn-primary btn-lg btn-block"> Ver Questões</a>
+	</div>
+	
+</form>

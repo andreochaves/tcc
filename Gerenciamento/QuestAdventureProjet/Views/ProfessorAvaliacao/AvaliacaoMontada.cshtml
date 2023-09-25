@@ -1,0 +1,73 @@
+﻿@model QuestAdventure.Models.Avaliacao
+@{
+    Layout = "Professor/_LayoutProfessorTelaAvaliacao";
+}
+
+
+<form asp-action="CadastrarAvaliacao">
+    <button type="submit" asp-action="VoltarAvaliacao" class="btn btn-danger"> Cancelar Avaliação </button>
+    <h1>Cadastro de Avaliação</h1>
+    <div class="form-group">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="30%"><label asp-for="Nome">Nome da Avaliação: </label></th>
+                    <th width="30%">@QuestAdventure.Controllers.UserManager.avaliacaoNome</th>
+                    <th width="30%"><label asp-for="Tentativa">Número de Tentativas: </label></th>
+                    <th width="10%">@QuestAdventure.Controllers.UserManager.avaliacaoTentativa</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="90%">Questões</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (QuestAdventure.Controllers.UserManager.fases != null)
+                {
+                    @foreach (var row in QuestAdventure.Controllers.UserManager.fases)
+                    {
+                        <tr>
+                            <th >
+                                <label>Fase: @row.NumeroFase</label>
+                            </th>
+                        </tr>
+                        string[] rows = @row.Questao.Split(","[0]);
+                        if (rows.Contains(","))
+                        {
+                            foreach (var row2 in rows)
+                            {
+                                <tr>
+                                    @foreach (var row3 in QuestAdventure.Controllers.UserManager.verQuestoes.Where(item => item.Id.ToString() == row2))
+                                    {
+                                        <td>@row3.Pergunta</td>
+                                    }
+                                </tr>
+
+                            }
+                        }
+
+                        else
+                        {
+                            @foreach (var row2 in QuestAdventure.Controllers.UserManager.verQuestoes.Where(item => item.Id.ToString() == row.Questao))
+                            {
+                                <tr>
+                                    <td>@row2.Pergunta</td>
+                                </tr>
+                            }
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <button type="submit" asp-action="CadastrarAvaliacao" class="btn btn-primary">Cadastrar Avaliação</button>
+</form>
+
+<h4>
+    <font color="red">
+        @Html.ValidationSummary()
+    </font>
+</h4>

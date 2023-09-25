@@ -1,0 +1,27 @@
+﻿@model List<QuestAdventure.Models.Materias>
+
+@{
+	Layout = "Admin/_LayoutAdmin";
+	ViewData["Title"] = "Disciplinas";
+}
+
+
+<h1>Disciplinas</h1>
+<form>
+<button type="submit" asp-action="VisualizarProfessor" class="btn btn-primary"> Voltar </button>
+</form>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Matéria </th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var row in QuestAdventure.Controllers.UserManager.verMateriasProfessor.OrderBy(item=>item.Materia))
+		{
+			<tr>
+				<td>@row.Materia</td>
+			</tr>
+		}
+	</tbody>
+</table>

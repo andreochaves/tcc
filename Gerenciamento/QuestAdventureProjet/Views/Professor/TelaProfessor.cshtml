@@ -1,0 +1,16 @@
+﻿@model QuestAdventure.Models.Professor
+@{
+	Layout = "Professor/_LayoutTelaProfessor";
+}
+
+<h1>Bem-Vindo @Model.Nome</h1>
+
+	<h2>Suas Matérias</h2>
+
+@foreach (var row in QuestAdventure.Controllers.UserManager.MateriaProfessor.OrderBy(item=>item.Materia))
+{
+	<div class="form-group">
+		<a class="btn  btn-info btn-lg btn-block" href=@Url.Action("Selecionar","Professor",new{materia=row.Materia,id=row.Id})>@row.Materia</a>
+	</div>
+}
+

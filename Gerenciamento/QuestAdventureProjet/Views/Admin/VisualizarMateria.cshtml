@@ -1,0 +1,32 @@
+﻿@model List<QuestAdventure.Models.Materias>
+@{
+	Layout = "Admin/_LayoutAdmin";
+	ViewData["Title"] = "Disciplinas";
+}
+
+
+<h1>Lista de Matérias</h1>
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var row in Model.OrderBy(item=>item.Materia))
+		{
+			<tr>
+				<td width="80%">@row.Materia</td>
+
+				<td>
+					@Html.ActionLink("Editar", "EditMateria", new { id=@row.Id }) |
+					@Html.ActionLink("Deletar", "DeleteMateria", new { id = @row.Id },
+				new { onclick = "return confirm('Deseja realmente deletar esta matéria ?');" })
+				</td>
+			</tr>
+
+		}
+	</tbody>
+</table>

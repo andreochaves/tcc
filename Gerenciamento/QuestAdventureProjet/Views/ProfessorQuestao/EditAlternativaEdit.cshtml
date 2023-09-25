@@ -1,0 +1,24 @@
+﻿@model QuestAdventure.Models.Alternativas
+@{
+    Layout = "Professor/_LayoutProfessorTelaQuestao";
+}
+
+<h1>Cadastro de Alternativa</h1>
+
+
+<form asp-action="CadastroAlternativa">
+	<div class="form-group">
+		<label asp-for="Alternativa" class="control-label"></label>
+		<input asp-for="Alternativa" class="form-control" />
+		<input asp-for="Correto" type="checkbox" class="form-check" size="100px" />
+	</div>
+
+	<button type="submit" asp-action="EditarAlternativa" class="btn btn-primary">Alterar Alternativa</button>
+</form>
+
+
+	<h4>
+        <font color="red">
+        @Html.ValidationSummary()
+        </font>
+    </h4>

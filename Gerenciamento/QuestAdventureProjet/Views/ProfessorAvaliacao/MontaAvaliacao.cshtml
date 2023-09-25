@@ -1,0 +1,52 @@
+﻿@model QuestAdventure.Models.Fase
+@{
+    Layout = "Professor/_LayoutProfessorTelaAvaliacao";
+}
+
+
+<form asp-action="CadastrarAvaliacao">
+    <button type="submit" asp-action="VoltarAvaliacao"  class="btn btn-danger"> Cancelar Avaliação </button>
+<h1>Cadastro de Avaliação</h1>
+<br/>
+    @if (@QuestAdventure.Controllers.UserManager.fases.Count < 15)
+    {
+        
+            int fase = @QuestAdventure.Controllers.UserManager.fases.Count + 1; 
+    
+        <h3>Fase @fase </h3>
+        <div class="form-group" id="">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th align="center">Questão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (QuestAdventure.Controllers.UserManager.questoes != null)
+                    {
+                        @foreach (var row in QuestAdventure.Controllers.UserManager.questoes)
+                        {
+                            <tr>
+                                <td>@Html.ActionLink(@row.Pergunta, "SelecionarQuestao", new { pergunta = row.Pergunta, id=row.Id })</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <button type="submit" asp-action="ProximaFase" class="btn btn-primary">Avançar ></button>
+    }
+    else
+    {
+        <button type="submit" asp-action="AvaliacaoMontada" class="btn btn-primary">Ver Seleção</button>
+    }
+</form>
+
+<h4>
+    <font color="red">
+        @Html.ValidationSummary()
+    </font>
+</h4>

@@ -1,0 +1,49 @@
+﻿@model QuestAdventure.Models.Alternativas
+@{
+    Layout = "Professor/_LayoutProfessorTelaQuestao";
+}
+
+<h1>Cadastro de Alternativa</h1>
+
+
+<form asp-action="CadastroAlternativa">
+	<div class="form-group" >
+		<label asp-for="Alternativa" class="control-label"></label>
+		<input asp-for="Alternativa" class="form-control" />
+		<input asp-for="Correto" type="checkbox" class="form-check" size="100px" />
+	</div>
+
+	<button type="submit" asp-action="AdicionarAlternativa" class="btn btn-primary">Adicionar Alternativa</button>
+
+	<button type="submit" asp-action="CadastrarAlternativa" class="btn btn-primary">Cadastrar Questão</button>
+
+</form>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Alternativas </th>
+		</tr>
+	</thead>
+	<tbody>
+		@if (QuestAdventure.Controllers.UserManager.alternativas != null)
+		{
+			@foreach (var row in QuestAdventure.Controllers.UserManager.alternativas)
+			{
+				<tr>
+					<td>@row.Alternativa</td>
+					<td>@row.Correto</td>
+					<td>
+						@Html.ActionLink("Delete", "DeleteAlternativa", new { alternativa = row.Alternativa })
+					</td>
+				</tr>
+			}
+		}
+	</tbody>
+</table>
+
+	<h4>
+        <font color="red">
+        @Html.ValidationSummary()
+        </font>
+    </h4>

@@ -1,0 +1,17 @@
+﻿@model QuestAdventure.Models.Avaliacao
+@{
+	Layout = "Professor/_LayoutProfessorTelaAvaliacao";
+}
+
+<h1>Cadastro de Avaliação</h1>
+
+<form asp-action="CadastrarAvaliacao">
+	<label asp-for="Nome" class="control-label">Nome da Avaliação</label>
+	<input asp-for="Nome" class="form-control" />
+	<label asp-for="Tentativa" class="control-label">Número de tentativas</label>
+	<input asp-for="Tentativa " class="form-control" />
+
+	
+	<button type="submit" asp-action="MontarAvaliacao" class="btn btn-primary">Avançar ></button>
+</form>
+

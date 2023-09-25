@@ -1,0 +1,45 @@
+﻿@model List<QuestAdventure.Models.Professor>
+
+@{
+	Layout = "Admin/_LayoutAdmin";
+	ViewData["Title"] = "Lista de Professores";
+}
+
+
+
+<h1>Lista de Professores</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Email</th>
+			<th>Materia </th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var row in Model.OrderBy(item=>item.Nome))
+		{
+			<tr>
+				<td>@row.Nome</td>
+				<td>@row.Email</td>
+				<td>
+					@if (row.Materia != null)
+					{
+						@Html.ActionLink("Visualizar Disciplinas", "VisualizarDisciplinaProfessor", new {  id=row.Id })
+					}
+				</td>
+				<td>
+					@Html.ActionLink("Editar", "EditProfessor", new { id=@row.Id }) |
+					@Html.ActionLink("Delete", "DeletarProfessor", new { id=@row.Id },
+				new { onclick = "return confirm('Deseja realmente deletar este professor?');" })
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+<h4>
+	<font color="red">
+		@Html.ValidationSummary()
+	</font>
+</h4>

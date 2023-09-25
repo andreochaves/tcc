@@ -1,0 +1,25 @@
+﻿@model QuestAdventure.Models.Materias
+@{
+	Layout = "Admin/_LayoutAdmin";
+}
+
+<div class="text-center">
+	<h1 class="display-4">
+		Cadastro de Matéria
+	</h1>
+</div>
+
+<form asp-action="EditMateria">
+	<div class="form-group">
+		<label asp-for="@Model.Materia" class="control-label">Matéria</label>
+		<input asp-for="@Model.Materia" class="form-control" />
+	</div>
+
+	<button type="submit" asp-action="EditarMateria" class="btn btn-primary">Editar Matéria</button>
+
+	<h4>
+		<font color="red">
+			@Html.ValidationSummary()
+		</font>
+	</h4>
+</form>
