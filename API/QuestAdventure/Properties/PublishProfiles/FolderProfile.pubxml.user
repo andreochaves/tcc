@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\MinhaApi</_PublishTargetUrl>
+    <History>False|2023-05-29T21:26:17.0256925Z;False|2023-05-29T18:26:06.2779531-03:00;True|2023-05-15T21:37:27.3852303-03:00;True|2023-05-15T21:29:07.5873089-03:00;False|2023-05-15T21:28:24.3873358-03:00;False|2023-05-15T21:26:59.8345604-03:00;True|2023-05-14T21:33:48.5213909-03:00;True|2023-05-13T14:23:05.1584447-03:00;False|2023-05-13T14:22:43.5725157-03:00;True|2023-05-08T21:27:57.5005091-03:00;True|2023-05-07T19:54:44.5680095-03:00;True|2023-05-07T17:28:50.4576377-03:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefautConnection">
+      <Value>data source=localhost%3bPort=3306%3bdatabase=tccquest%3buser=root%3bpassword=Almeida.14%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
