@@ -19,3 +19,4 @@ TCC filter=lfs diff=lfs merge=lfs -text
 Aluno/ filter=lfs diff=lfs merge=lfs -text
 ProjetoTCC-Aluno/ filter=lfs diff=lfs merge=lfs -text
 Jogo/ filter=lfs diff=lfs merge=lfs -text
+Library/ filter=lfs diff=lfs merge=lfs -text
