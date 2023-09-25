@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: 5d336fe4415cb384b963e6d4ba49f75a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8790975767311937601
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_0
+  - first:
+      213: -6907460758582209775
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_1
+  - first:
+      213: -6562578403182009504
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_2
+  - first:
+      213: 3596508875528948842
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_3
+  - first:
+      213: 738071408665801321
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_4
+  - first:
+      213: -3021172429573984515
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_5
+  - first:
+      213: 343392466143775952
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_6
+  - first:
+      213: -3146304183153301648
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_7
+  - first:
+      213: 172560058353418149
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_8
+  - first:
+      213: -7425969877272674165
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_9
+  - first:
+      213: -1486187354799317885
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_10
+  - first:
+      213: 6173525572998346007
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_11
+  - first:
+      213: -4229172068917404406
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_12
+  - first:
+      213: 7946952534790831830
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_13
+  - first:
+      213: 5152203251000193739
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_14
+  - first:
+      213: -1895904381451725919
+    second: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140f1bf32e1dff970800000000000000
+      internalID: 8790975767311937601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 412
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113d1c09905c320a0800000000000000
+      internalID: -6907460758582209775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 412
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063afab56b90de4a0800000000000000
+      internalID: -6562578403182009504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 412
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c417564cd59e130800000000000000
+      internalID: 3596508875528948842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962b56429082e3a00800000000000000
+      internalID: 738071408665801321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 284
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfee902aea3a216d0800000000000000
+      internalID: -3021172429573984515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 284
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc8b0be0a9f3c400800000000000000
+      internalID: 343392466143775952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 284
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07762d7e3051654d0800000000000000
+      internalID: -3146304183153301648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af7394757e056200800000000000000
+      internalID: 172560058353418149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 156
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b804968bdb7a1f890800000000000000
+      internalID: -7425969877272674165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 156
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c52879970006be0800000000000000
+      internalID: -1486187354799317885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 156
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7153b56ccc4cca550800000000000000
+      internalID: 6173525572998346007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d9c221966fe45c0800000000000000
+      internalID: -4229172068917404406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6def813c93f394e60800000000000000
+      internalID: 7946952534790831830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 28
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2ba7a2f8d408740800000000000000
+      internalID: 5152203251000193739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2d_lava_texture_by_cadenzamc_d80t0lt-fullview_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 28
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3967f820560b5e0800000000000000
+      internalID: -1895904381451725919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_11: 6173525572998346007
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_15: -1895904381451725919
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_5: -3021172429573984515
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_3: 3596508875528948842
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_10: -1486187354799317885
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_6: 343392466143775952
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_1: -6907460758582209775
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_7: -3146304183153301648
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_12: -4229172068917404406
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_13: 7946952534790831830
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_0: 8790975767311937601
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_9: -7425969877272674165
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_14: 5152203251000193739
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_8: 172560058353418149
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_2: -6562578403182009504
+      2d_lava_texture_by_cadenzamc_d80t0lt-fullview_4: 738071408665801321
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
